@@ -1,0 +1,769 @@
+2019-02-27 06:12:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'application\controller\ViewController' not found in E:\WWW\AlexApi\application\index\controller\Index.php on line 3"
+2019-02-27 06:13:14 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'application\controller\View' not found in E:\WWW\AlexApi\application\index\controller\Index.php on line 3"
+2019-02-27 06:13:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'application\View' not found in E:\WWW\AlexApi\application\index\controller\Index.php on line 3"
+2019-02-27 06:14:32 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'application\controller\View' not found in E:\WWW\AlexApi\application\index\controller\Index.php on line 4"
+2019-02-27 06:14:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'application\View' not found in E:\WWW\AlexApi\application\index\controller\Index.php on line 3"
+2019-02-27 06:16:11 pid:1 ArgumentCountError: Too few arguments to function application\View::__construct(), 0 passed in E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php on line 195 and exactly 2 expected in E:\WWW\AlexApi\application\View.php:12
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(195): application\View->__construct()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\WWW\AlexApi\index.php(22): Workerman\Worker::runAll()
+#11 {main}
+2019-02-27 06:16:11 pid:1 Worker process terminated
+2019-02-27 06:17:02 pid:1 TypeError: Argument 1 passed to think\Template::__construct() must be of the type array, null given, called in E:\WWW\AlexApi\application\View.php on line 13 and defined in E:\WWW\AlexApi\vendor\topthink\think-template\src\Template.php:88
+Stack trace:
+#0 E:\WWW\AlexApi\application\View.php(13): think\Template->__construct(NULL)
+#1 E:\WWW\AlexApi\application\index\controller\Index.php(6): application\View->__construct('index/Index/ind...', Array)
+#2 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(238): application\controller\Index->index()
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#11 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#12 E:\WWW\AlexApi\index.php(22): Workerman\Worker::runAll()
+#13 {main}
+2019-02-27 06:17:02 pid:1 Worker process terminated
+2019-02-27 06:17:23 pid:1 Worker process terminated
+2019-02-27 06:18:02 pid:1 Worker process terminated
+2019-02-27 06:19:29 pid:1 Worker process terminated
+2019-02-27 06:20:25 pid:1 Worker process terminated
+2019-02-27 06:21:14 pid:1 Worker process terminated
+2019-02-27 06:22:19 pid:1 Worker process terminated
+2019-02-27 06:52:38 pid:1 Error: Method name must be a string in E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php:269
+Stack trace:
+#0 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#1 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#3 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 E:\WWW\AlexApi\index.php(20): Workerman\Worker::runAll()
+#10 {main}
+2019-02-27 06:52:38 pid:1 Worker process terminated
+2019-02-27 06:55:00 pid:1 Error: Class '\application\controller\' not found in E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php:269
+Stack trace:
+#0 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#1 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#3 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 E:\WWW\AlexApi\index.php(20): Workerman\Worker::runAll()
+#10 {main}
+2019-02-27 06:55:00 pid:1 Worker process terminated
+2019-02-27 08:01:42 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:01:42 pid:1 Worker process terminated
+2019-02-27 08:02:31 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:02:31 pid:1 Worker process terminated
+2019-02-27 08:04:16 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:04:16 pid:1 Worker process terminated
+2019-02-27 08:04:42 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:04:42 pid:1 Worker process terminated
+2019-02-27 08:05:31 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:05:31 pid:1 Worker process terminated
+2019-02-27 08:06:22 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:06:22 pid:1 Worker process terminated
+2019-02-27 08:07:08 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:07:08 pid:1 Worker process terminated
+2019-02-27 08:07:52 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:07:52 pid:1 Worker process terminated
+2019-02-27 08:08:48 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(20): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(26): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:08:48 pid:1 Worker process terminated
+2019-02-27 08:09:44 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(20): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(26): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:09:44 pid:1 Worker process terminated
+2019-02-27 08:09:49 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(20): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(26): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:09:49 pid:1 Worker process terminated
+2019-02-27 08:10:46 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 E:\WWW\AlexApi\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 E:\WWW\AlexApi\index.php(19): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:10:46 pid:1 Worker process terminated
+2019-02-27 08:30:08 pid:1 Error: Call to a member function send() on null in E:\WWW\AlexApi\application\index\controller\Index.php:10
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#11 {main}
+2019-02-27 08:30:08 pid:1 Worker process terminated
+2019-02-27 08:35:05 pid:1 Error: Call to a member function send() on null in E:\WWW\AlexApi\application\index\controller\Index.php:10
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#4 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#11 {main}
+2019-02-27 08:35:05 pid:1 Worker process terminated
+2019-02-27 08:39:05 pid:1 Error: Call to a member function send() on null in E:\WWW\AlexApi\core\function.php:14
+Stack trace:
+#0 E:\WWW\AlexApi\application\index\controller\Index.php(9): direct('index/Home/inde...')
+#1 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\WWW\AlexApi\index.php(25): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 08:39:05 pid:1 Worker process terminated
+2019-02-27 08:59:46 pid:1 ParseError: syntax error, unexpected 'echo' (T_ECHO) in E:\WWW\AlexApi\runtime\f9d4eeff3590bd7e026a67132b900ca2.php:14
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\topthink\think-template\src\Template.php(212): think\template\driver\File->read('E:\\WWW\\AlexApi....', Array)
+#1 E:\WWW\AlexApi\application\View.php(18): think\Template->fetch('E:\\WWW\\AlexApi/...')
+#2 E:\WWW\AlexApi\application\index\controller\Index.php(9): application\View->__construct('index/Index/ind...', Array)
+#3 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#11 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#12 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#13 E:\WWW\AlexApi\index.php(26): Workerman\Worker::runAll()
+#14 {main}
+2019-02-27 08:59:46 pid:1 Worker process terminated
+2019-02-27 08:59:53 pid:1 ParseError: syntax error, unexpected 'echo' (T_ECHO) in E:\WWW\AlexApi\runtime\f9d4eeff3590bd7e026a67132b900ca2.php:14
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\topthink\think-template\src\Template.php(212): think\template\driver\File->read('E:\\WWW\\AlexApi....', Array)
+#1 E:\WWW\AlexApi\application\View.php(18): think\Template->fetch('E:\\WWW\\AlexApi/...')
+#2 E:\WWW\AlexApi\application\index\controller\Index.php(9): application\View->__construct('index/Index/ind...', Array)
+#3 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#11 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#12 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#13 E:\WWW\AlexApi\index.php(26): Workerman\Worker::runAll()
+#14 {main}
+2019-02-27 08:59:53 pid:1 Worker process terminated
+2019-02-27 09:03:47 pid:1 ParseError: syntax error, unexpected 'echo' (T_ECHO) in E:\WWW\AlexApi\runtime\f9d4eeff3590bd7e026a67132b900ca2.php:14
+Stack trace:
+#0 E:\WWW\AlexApi\vendor\topthink\think-template\src\Template.php(212): think\template\driver\File->read('E:\\WWW\\AlexApi....', Array)
+#1 E:\WWW\AlexApi\application\View.php(17): think\Template->fetch('E:\\WWW\\AlexApi/...')
+#2 E:\WWW\AlexApi\application\index\controller\Index.php(9): application\View->__construct('index/Index/ind...', Array)
+#3 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#5 E:\WWW\AlexApi\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#7 E:\WWW\AlexApi\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#8 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#9 E:\WWW\AlexApi\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#10 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#11 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#12 E:\WWW\AlexApi\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#13 E:\WWW\AlexApi\index.php(26): Workerman\Worker::runAll()
+#14 {main}
+2019-02-27 09:03:47 pid:1 Worker process terminated
+2019-02-27 17:22:32 pid:4299 Workerman[index.php] start in DEBUG mode
+2019-02-27 17:23:30 pid:4299 Workerman[index.php] stopping ...
+2019-02-27 17:23:30 pid:4299 Workerman[index.php] has been stopped
+2019-02-27 12:33:54 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in F:\files\www\AlexMVC\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 F:\files\www\AlexMVC\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=bl...', 'root', 'Lilin392999.', Array)
+#1 F:\files\www\AlexMVC\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 F:\files\www\AlexMVC\index.php(20): Workerman\MySQL\Connection->__construct('127.0.0.1', '3306', 'root', 'Lilin392999.', 'blog')
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#12 {main}
+2019-02-27 12:33:54 pid:1 Worker process terminated
+2019-02-27 12:34:55 pid:1 TypeError: Argument 1 passed to think\Template::fetch() must be of the type string, null given, called in F:\files\www\AlexMVC\application\View.php on line 18 and defined in F:\files\www\AlexMVC\vendor\topthink\think-template\src\Template.php:190
+Stack trace:
+#0 F:\files\www\AlexMVC\application\View.php(18): think\Template->fetch(NULL)
+#1 F:\files\www\AlexMVC\application\index\controller\Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#2 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#9 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#10 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#11 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#12 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#13 {main}
+2019-02-27 12:34:55 pid:1 Worker process terminated
+2019-02-27 12:35:20 pid:1 TypeError: Argument 1 passed to think\Template::fetch() must be of the type string, null given, called in F:\files\www\AlexMVC\application\View.php on line 18 and defined in F:\files\www\AlexMVC\vendor\topthink\think-template\src\Template.php:190
+Stack trace:
+#0 F:\files\www\AlexMVC\application\View.php(18): think\Template->fetch(NULL)
+#1 F:\files\www\AlexMVC\application\index\controller\Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#2 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #30)
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#9 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#10 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#11 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#12 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#13 {main}
+2019-02-27 12:35:20 pid:1 Worker process terminated
+2019-02-27 12:35:51 pid:1 TypeError: Argument 1 passed to think\Template::fetch() must be of the type string, null given, called in F:\files\www\AlexMVC\application\View.php on line 18 and defined in F:\files\www\AlexMVC\vendor\topthink\think-template\src\Template.php:190
+Stack trace:
+#0 F:\files\www\AlexMVC\application\View.php(18): think\Template->fetch(NULL)
+#1 F:\files\www\AlexMVC\application\index\controller\Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#2 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #30)
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#9 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#10 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#11 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#12 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#13 {main}
+2019-02-27 12:35:51 pid:1 Worker process terminated
+2019-02-27 12:36:30 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class application\View could not be converted to string in F:\files\www\AlexMVC\application\index\controller\Index.php on line 8"
+2019-02-27 12:38:12 pid:1 think\template\exception\TemplateNotFoundException: template not exists:F:\files\www\AlexMVC./application/1.html in F:\files\www\AlexMVC\vendor\topthink\think-template\src\Template.php:1194
+Stack trace:
+#0 F:\files\www\AlexMVC\vendor\topthink\think-template\src\Template.php(196): think\Template->parseTemplateFile('F:\\files\\www\\Al...')
+#1 F:\files\www\AlexMVC\application\View.php(18): think\Template->fetch('1')
+#2 F:\files\www\AlexMVC\application\index\controller\Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#3 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(237): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#5 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#9 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#10 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#11 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#12 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#13 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#14 {main}
+2019-02-27 12:38:13 pid:1 Worker process terminated
+2019-02-27 13:27:31 pid:1 Error: Call to undefined function Workerman\sendFile() in F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php:178
+Stack trace:
+#0 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#1 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#3 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#5 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#10 {main}
+2019-02-27 13:27:31 pid:1 Worker process terminated
+2019-02-27 13:51:40 pid:1 Error: Undefined class constant 'header' in F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php:181
+Stack trace:
+#0 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#1 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #30)
+#3 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#5 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#10 {main}
+2019-02-27 13:51:40 pid:1 Worker process terminated
+2019-02-27 13:51:53 pid:1 ArgumentCountError: Too few arguments to function Workerman\Protocols\Http::header(), 0 passed in F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php on line 181 and at least 1 expected in F:\files\www\AlexMVC\vendor\workerman\workerman\Protocols\Http.php:279
+Stack trace:
+#0 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(181): Workerman\Protocols\Http::header()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#11 {main}
+2019-02-27 13:51:53 pid:1 Worker process terminated
+2019-02-27 13:55:01 pid:1 Error: Function name must be a string in F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php:181
+Stack trace:
+#0 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#1 F:\files\www\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #30)
+#3 F:\files\www\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#5 F:\files\www\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#6 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#7 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 F:\files\www\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 F:\files\www\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#10 {main}
+2019-02-27 13:55:01 pid:1 Worker process terminated
+2019-02-28 01:06:53 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in G:\AlexMVC\vendor\workerman\mysql\src\Connection.php:1711
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\mysql\src\Connection.php(1711): PDO->__construct('mysql:dbname=bl...', 'root', 'root', Array)
+#1 G:\AlexMVC\vendor\workerman\mysql\src\Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 G:\AlexMVC\index.php(20): Workerman\MySQL\Connection->__construct('127.0.0.1', '3306', 'root', 'root', 'blog')
+#3 [internal function]: httpServer->{closure}(Object(Workerman\WebServer))
+#4 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(107): call_user_func(Object(Closure), Object(Workerman\WebServer))
+#5 [internal function]: Workerman\WebServer->onWorkerStart(Object(Workerman\WebServer))
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\WebServer))
+#7 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 G:\AlexMVC\index.php(26): Workerman\Worker::runAll()
+#12 {main}
+2019-02-28 01:06:53 pid:1 Worker process terminated
+2019-02-28 01:16:20 pid:1 Worker process terminated
+2019-02-28 09:18:21 pid:5966 Workerman[index.php] start in DEBUG mode
+2019-02-28 09:19:04 pid:5966 Workerman[index.php] stopping ...
+2019-02-28 09:19:04 pid:5966 Workerman[index.php] has been stopped
+2019-02-28 09:19:11 pid:5974 Workerman[index.php] start in DEBUG mode
+2019-02-28 09:19:24 pid:5976 TypeError: Argument 1 passed to think\Template::fetch() must be of the type string, null given, called in /mnt/g/AlexMVC/application/View.php on line 18 and defined in /mnt/g/AlexMVC/vendor/topthink/think-template/src/Template.php:190
+Stack trace:
+#0 /mnt/g/AlexMVC/application/View.php(18): think\Template->fetch(NULL)
+#1 /mnt/g/AlexMVC/application/index/controller/Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#2 /mnt/g/AlexMVC/vendor/workerman/workerman/WebServer.php(280): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /mnt/g/AlexMVC/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #1293)
+#6 /mnt/g/AlexMVC/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#8 /mnt/g/AlexMVC/vendor/workerman/workerman/WebServer.php(89): Workerman\Worker->run()
+#9 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1452): Workerman\WebServer->run()
+#10 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\WebServer))
+#11 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /mnt/g/AlexMVC/index.php(31): Workerman\Worker::runAll()
+#14 {main}
+2019-02-28 09:19:24 pid:5976 Worker[5976] process terminated
+2019-02-28 09:19:24 pid:5974 worker[WebServer:5976] exit with status 64000
+2019-02-28 09:19:45 pid:5979 TypeError: Argument 1 passed to think\Template::fetch() must be of the type string, null given, called in /mnt/g/AlexMVC/application/View.php on line 18 and defined in /mnt/g/AlexMVC/vendor/topthink/think-template/src/Template.php:190
+Stack trace:
+#0 /mnt/g/AlexMVC/application/View.php(18): think\Template->fetch(NULL)
+#1 /mnt/g/AlexMVC/application/index/controller/Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#2 /mnt/g/AlexMVC/vendor/workerman/workerman/WebServer.php(280): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /mnt/g/AlexMVC/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #136)
+#6 /mnt/g/AlexMVC/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#8 /mnt/g/AlexMVC/vendor/workerman/workerman/WebServer.php(89): Workerman\Worker->run()
+#9 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1452): Workerman\WebServer->run()
+#10 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\WebServer))
+#11 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#13 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#14 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#15 /mnt/g/AlexMVC/index.php(31): Workerman\Worker::runAll()
+#16 {main}
+2019-02-28 09:19:45 pid:5977 TypeError: Argument 1 passed to think\Template::fetch() must be of the type string, null given, called in /mnt/g/AlexMVC/application/View.php on line 18 and defined in /mnt/g/AlexMVC/vendor/topthink/think-template/src/Template.php:190
+Stack trace:
+#0 /mnt/g/AlexMVC/application/View.php(18): think\Template->fetch(NULL)
+#1 /mnt/g/AlexMVC/application/index/controller/Index.php(8): application\View->__construct('index/Index/ind...', Array)
+#2 /mnt/g/AlexMVC/vendor/workerman/workerman/WebServer.php(280): application\controller\Index->index(Object(Workerman\Connection\TcpConnection))
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /mnt/g/AlexMVC/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #1537)
+#6 /mnt/g/AlexMVC/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#8 /mnt/g/AlexMVC/vendor/workerman/workerman/WebServer.php(89): Workerman\Worker->run()
+#9 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1452): Workerman\WebServer->run()
+#10 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\WebServer))
+#11 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /mnt/g/AlexMVC/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /mnt/g/AlexMVC/index.php(31): Workerman\Worker::runAll()
+#14 {main}
+2019-02-28 09:19:45 pid:5979 Worker[5979] process terminated
+2019-02-28 09:19:45 pid:5977 Worker[5977] process terminated
+2019-02-28 09:19:45 pid:5974 worker[WebServer:5979] exit with status 64000
+2019-02-28 09:19:45 pid:5974 worker[WebServer:5977] exit with status 64000
+2019-02-28 09:20:50 pid:5974 Workerman[index.php] stopping ...
+2019-02-28 09:20:50 pid:5974 Workerman[index.php] has been stopped
+2019-02-28 02:09:31 pid:1 Error: Method name must be a string in G:\AlexMVC\vendor\workerman\workerman\WebServer.php:285
+Stack trace:
+#0 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#1 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#3 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#5 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#7 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#10 {main}
+2019-02-28 02:09:31 pid:1 Worker process terminated
+2019-02-28 02:17:09 pid:1 Error: Call to a member function send() on null in G:\AlexMVC\vendor\workerman\workerman\WebServer.php:289
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(223): Workerman\WebServer->dealRoute('index/index/ind...', Array)
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#4 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#7 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#11 {main}
+2019-02-28 02:17:09 pid:1 Worker process terminated
+2019-02-28 06:13:16 pid:1 Error: Class 'application\controller\Workerman\Protocols\Http' not found in G:\AlexMVC\application\index\controller\Index.php:30
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(336): application\controller\Index->testSession(Object(Workerman\Connection\TcpConnection))
+#1 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(220): Workerman\WebServer->dealRoute('index/index/tes...', Array, Object(Workerman\Connection\TcpConnection), false)
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#12 {main}
+2019-02-28 06:13:16 pid:1 Worker process terminated
+2019-02-28 06:13:28 pid:1 Error: Undefined class constant 'header' in G:\AlexMVC\application\index\controller\Index.php:30
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(336): application\controller\Index->testSession(Object(Workerman\Connection\TcpConnection))
+#1 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(220): Workerman\WebServer->dealRoute('index/index/tes...', Array, Object(Workerman\Connection\TcpConnection), false)
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#12 {main}
+2019-02-28 06:13:28 pid:1 Worker process terminated
+2019-02-28 06:14:24 pid:1 Error: Undefined class constant 'sessionId' in G:\AlexMVC\application\index\controller\Index.php:30
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(336): application\controller\Index->testSession(Object(Workerman\Connection\TcpConnection))
+#1 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(220): Workerman\WebServer->dealRoute('index/index/tes...', Array, Object(Workerman\Connection\TcpConnection), false)
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#12 {main}
+2019-02-28 06:14:24 pid:1 Worker process terminated
+2019-02-28 06:16:42 pid:1 Error: Class 'application\controller\HttpCache' not found in G:\AlexMVC\application\index\controller\Index.php:30
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(336): application\controller\Index->testSession(Object(Workerman\Connection\TcpConnection))
+#1 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(220): Workerman\WebServer->dealRoute('index/index/tes...', Array, Object(Workerman\Connection\TcpConnection), false)
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#12 {main}
+2019-02-28 06:16:42 pid:1 Worker process terminated
+2019-02-28 06:23:20 pid:1 ArgumentCountError: Too few arguments to function delSession(), 0 passed in G:\AlexMVC\application\index\controller\Index.php on line 30 and exactly 2 expected in G:\AlexMVC\core\function.php:33
+Stack trace:
+#0 G:\AlexMVC\application\index\controller\Index.php(30): delSession()
+#1 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(336): application\controller\Index->testSession(Object(Workerman\Connection\TcpConnection))
+#2 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(220): Workerman\WebServer->dealRoute('index/index/tes...', Array, Object(Workerman\Connection\TcpConnection), false)
+#3 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#6 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#7 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#8 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#11 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#12 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#13 {main}
+2019-02-28 06:23:20 pid:1 Worker process terminated
+2019-02-28 07:30:27 pid:1 Error: Call to undefined method application\controller\Index::sessionId() in G:\AlexMVC\application\index\controller\Index.php:37
+Stack trace:
+#0 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(333): application\controller\Index->del(Object(Workerman\Connection\TcpConnection))
+#1 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(219): Workerman\WebServer->dealRoute('index/index/del...', Array, Object(Workerman\Connection\TcpConnection), false)
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 G:\AlexMVC\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 G:\AlexMVC\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 G:\AlexMVC\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 G:\AlexMVC\vendor\workerman\workerman\WebServer.php(89): Workerman\Worker->run()
+#8 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1315): Workerman\WebServer->run()
+#9 G:\AlexMVC\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 G:\AlexMVC\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 G:\AlexMVC\index.php(31): Workerman\Worker::runAll()
+#12 {main}
+2019-02-28 07:30:27 pid:1 Worker process terminated
+2019-02-28 17:20:42 pid:5994 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:20:45 pid:5994 Workerman[index.php] stopping ...
+2019-02-28 17:20:45 pid:5994 Workerman[index.php] has been stopped
+2019-02-28 17:20:54 pid:5996 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:21:13 pid:6016 Workerman[index.php] status 
+2019-02-28 17:21:51 pid:6017 Workerman[index.php] status 
+2019-02-28 17:21:54 pid:6018 Workerman[index.php] status 
+2019-02-28 17:22:05 pid:5996 Workerman[index.php] stopping ...
+2019-02-28 17:22:05 pid:5996 Workerman[index.php] has been stopped
+2019-02-28 17:30:17 pid:6033 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:35:16 pid:6033 Workerman[index.php] stopping ...
+2019-02-28 17:35:16 pid:6033 Workerman[index.php] has been stopped
+2019-02-28 17:35:17 pid:6035 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:35:55 pid:6035 Workerman[index.php] stopping ...
+2019-02-28 17:35:55 pid:6035 Workerman[index.php] has been stopped
+2019-02-28 17:35:56 pid:6037 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:38:27 pid:6037 Workerman[index.php] stopping ...
+2019-02-28 17:38:27 pid:6037 Workerman[index.php] has been stopped
+2019-02-28 17:38:28 pid:6039 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:38:55 pid:6039 Workerman[index.php] stopping ...
+2019-02-28 17:38:55 pid:6039 Workerman[index.php] has been stopped
+2019-02-28 17:38:56 pid:6041 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:39:42 pid:6041 Workerman[index.php] stopping ...
+2019-02-28 17:39:42 pid:6041 Workerman[index.php] has been stopped
+2019-02-28 17:39:42 pid:6043 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:41:41 pid:6043 Workerman[index.php] stopping ...
+2019-02-28 17:41:41 pid:6043 Workerman[index.php] has been stopped
+2019-02-28 17:42:06 pid:6045 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:43:02 pid:6045 Workerman[index.php] stopping ...
+2019-02-28 17:43:02 pid:6045 Workerman[index.php] has been stopped
+2019-02-28 17:43:02 pid:6047 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:43:23 pid:6047 Workerman[index.php] stopping ...
+2019-02-28 17:43:23 pid:6047 Workerman[index.php] has been stopped
+2019-02-28 17:43:24 pid:6049 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:43:39 pid:6049 Workerman[index.php] stopping ...
+2019-02-28 17:43:39 pid:6049 Workerman[index.php] has been stopped
+2019-02-28 17:43:39 pid:6051 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:43:46 pid:6051 Workerman[index.php] stopping ...
+2019-02-28 17:43:46 pid:6051 Workerman[index.php] has been stopped
+2019-02-28 17:43:47 pid:6053 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:44:05 pid:6053 Workerman[index.php] stopping ...
+2019-02-28 17:44:05 pid:6053 Workerman[index.php] has been stopped
+2019-02-28 17:44:05 pid:6055 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:44:13 pid:6055 Workerman[index.php] stopping ...
+2019-02-28 17:44:13 pid:6055 Workerman[index.php] has been stopped
+2019-02-28 17:44:13 pid:6057 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:47:21 pid:6057 Workerman[index.php] stopping ...
+2019-02-28 17:47:21 pid:6057 Workerman[index.php] has been stopped
+2019-02-28 17:53:06 pid:6176 Workerman[index.php] start in DEBUG mode
+2019-02-28 17:53:08 pid:6176 Workerman[index.php] stopping ...
+2019-02-28 17:53:08 pid:6176 Workerman[index.php] has been stopped
+2019-03-01 03:04:04 pid:1 Worker process terminated
