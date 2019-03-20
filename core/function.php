@@ -26,7 +26,7 @@ if(!function_exists("location")){
 /**
  * 删除session
  */
-if(!function_exists("session")){
+if(!function_exists("delSession")){
     function delSession(){
         if(file_exists(\Workerman\Protocols\HttpCache::$sessionPath.DIRECTORY_SEPARATOR."alex_".$_COOKIE[\Workerman\Protocols\HttpCache::$sessionName])) {
             try {
@@ -46,15 +46,35 @@ if(!function_exists("session")){
 
 /**
  * 存入session
+ * @param $key
+ * @param $vals
+ * @param $holdTime 有效时长，默认7200s
  */
-if(!function_exists("session")){
-    function setSession($key,$vals){
+if(!function_exists("setSession")){
+    function setSession($key,$vals,$holdTime=7200){
         \Workerman\Protocols\Http::sessionStart();
+        $vals['outdateTime'] = time() + $holdTime;
         $_SESSION[$key] = $vals;
         if(!empty($_SESSION[$key])) {
             return true;
         }else {
             return false;
+        }
+    }
+}
+
+/**
+ * 获取session
+ */
+if(!function_exists('getSession')) {
+    function getSession($key) {
+        \Workerman\Protocols\Http::sessionStart();
+        $vals = $_SESSION[$key];
+        if($vals['outdateTime'] < time()) {
+            delSession();
+            return false;
+        }else {
+            return $vals;
         }
     }
 }
