@@ -18,7 +18,13 @@
             <h4>QQ： <a href="javascrit:void(0)">{$qq}</a></h4>
             <h4>version： <a href="javascrit:void(0)">{$version}</a></h4>
             <h3>{$content}</h3>
+            {:getCaptcha()}
         </div>
+
+        <form action="{:url('index/Index/testUploadFile')}" method="post" enctype="multipart/form-data">
+            <input name="alex" type="file" value="file" />
+            <input type="submit" value="submit" />
+        </form>
     </div>
 </body>
 </html>
