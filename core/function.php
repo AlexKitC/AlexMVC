@@ -194,15 +194,20 @@ if(!function_exists('checkCaptcha')) {
  */
 if(!function_exists('fileUpload')) {
     function fileUpload($fileName) {
-        $extArr = array_values(array_filter(explode(".",$_FILES[0]['file_name'])));
-        $ext = $extArr[count($extArr)-1];
-        if(!is_dir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads')) {
-            mkdir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads');
+        if(!empty($_FILES[0]['file_data'])) {
+            $extArr = array_values(array_filter(explode(".",$_FILES[0]['file_name'])));
+            $ext = $extArr[count($extArr)-1];
+            if(!is_dir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads')) {
+                mkdir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads');
+            }
+            if(!is_dir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.date('Ymd',time()))) {
+                mkdir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.date('Ymd',time()));
+            }
+            file_put_contents(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.date('Ymd',time()).DIRECTORY_SEPARATOR.$fileName.'.'.$ext,$_FILES[0]['file_data']);
+        }else {
+            echo 'no files!';
         }
-        if(!is_dir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.date('Ymd',time()))) {
-            mkdir(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.date('Ymd',time()));
-        }
-        file_put_contents(APIROOT.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.date('Ymd',time()).DIRECTORY_SEPARATOR.$fileName.'.'.$ext,$_FILES[0]['file_data']);
+        
     }
 }
 
