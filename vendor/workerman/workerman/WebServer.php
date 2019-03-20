@@ -283,6 +283,7 @@ class WebServer extends Worker
                     }
                     //执行对应方法
                     $action = empty($urlArray[2]) ? $this -> app_action : $urlArray[2];
+                    
                     global $globalConfig;
                     if(strpos($action,".".$globalConfig['htaccess'])) {
                         $action = substr($action,0,strpos($action,".".$globalConfig['htaccess']));
@@ -338,13 +339,13 @@ class WebServer extends Worker
                             }
                             return;
                         }
+                    }
                     }else{
                         ob_start();
                         echo('ERROR: Action: '.$action.'  is  not  exists.');
                         $connection -> send(ob_get_clean());
                     }
                     unset($action);
-                    }
                 }else{
                     ob_start();
                     echo('ERROR: Controller: '.$controller.'  is  not  exists.');
