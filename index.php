@@ -11,14 +11,15 @@ include __DIR__ . '/core/function.php';
 class httpServer{
     private $httpServer;
     public function __construct(){
-        $this -> httpServer = new WebServer('http://0.0.0.0:9999');
+        global $globalConfig;
+        $this -> httpServer = new WebServer('http://0.0.0.0:'.$globalConfig['httpport']);
         $this -> httpServer -> addRoot('alex.91mylover.top','/var/www/php/AlexMVC');
         $this -> httpServer -> count = 1;
         $this -> httpServer -> onWorkerStart = function($worker) {//初始化全局mysql连接
             global $db;
             global $globalConfig;
             try{
-                $db = new \Workerman\MySQL\Connection($globalConfig['host'], $globalConfig['port'], $globalConfig['user'], $globalConfig['password'], $globalConfig['database']);
+                $db = new \Workerman\MySQL\Connection($globalConfig['sqlhost'], $globalConfig['sqlport'], $globalConfig['sqluser'], $globalConfig['password'], $globalConfig['database']);
             } catch(\Exception $e) {
                 echo $e -> getMessage();
                 die;
