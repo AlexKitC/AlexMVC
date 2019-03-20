@@ -1,6 +1,6 @@
 <?php
 namespace application\controller;
-class Index{
+class Index {
 
     //默认执行的方法，此处实例化了视图类，并传入了模块控制器，和 需要传入模板的变量数组
     public function index(){
@@ -28,7 +28,7 @@ class Index{
     public function testSession() {
         \Workerman\Protocols\Http::sessionStart();
         //delSession();
-        $_SESSION['userinfo'] = ['username'=>'lilin','uid'=>1];
+        //setSession('userinfo',['username'=>'lilin','uid'=>1]);
     }
 
     public function del() {
@@ -40,7 +40,10 @@ class Index{
     }
 
     public function testUploadFile() {
-        dump(strlen($_POST));
-        dump($_FILES);
+        fileUpload("aaa");
+    }
+
+    public function captcha(){
+        captcha();
     }
 }
