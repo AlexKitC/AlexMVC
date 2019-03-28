@@ -236,7 +236,6 @@ class WebServer extends Worker
         unset($workerman_url_info);
         //dump($pathInfoArr);
         if(!empty($pathInfoArr)) {
-            global $globalConfig;
             if(strpos($pathInfoArr[count($pathInfoArr) -1],".")) {//带伪静态的请求
                 $tmpArr = explode(".",$pathInfoArr[count($pathInfoArr) -1]);
                 // dump($tmpArr[count($tmpArr)-1]);
