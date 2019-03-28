@@ -180,8 +180,7 @@ class WebServer extends Worker
             if(strpos($pathInfoArr[count($pathInfoArr) -1],".")) {
                 $tmpArr = explode(".",$pathInfoArr[count($pathInfoArr) -1]);
                 Http::headerRemove('Content-Type');
-                
-                switch($tmpArr[1]) {
+                switch($tmpArr[count($tmpArr)-1]) {
                     case $globalConfig['htaccess']:
                         Http::header('Content-Type:text/html;charset=utf8');
                         break;
@@ -235,19 +234,22 @@ class WebServer extends Worker
         
         
         unset($workerman_url_info);
+        //dump($pathInfoArr);
         if(!empty($pathInfoArr)) {
-            if(strpos($pathInfoArr[count($pathInfoArr) -1],".")) {
+            global $globalConfig;
+            if(strpos($pathInfoArr[count($pathInfoArr) -1],".")) {//带伪静态的请求
                 $tmpArr = explode(".",$pathInfoArr[count($pathInfoArr) -1]);
-                if(\in_array($tmpArr[1],$resourceArr)) {
+                // dump($tmpArr[count($tmpArr)-1]);
+                if(\in_array($tmpArr[count($tmpArr)-1],$resourceArr)) {
                     $this -> dealRoute($pathInfo,$pathInfoArr,$connection,true);
                 }else {
                     $this -> dealRoute($pathInfo,$pathInfoArr,$connection,false);
                 }
             }else {
-                $this -> dealRoute($pathInfo,$pathInfoArr,$connection,false);
+                $this -> dealRoute($pathInfo,$pathInfoArr,$connection,false);//不带伪静态的请求
             }
         }else {
-            $this -> dealRoute($pathInfo,$pathInfoArr,$connection,false);
+            $this -> dealRoute($pathInfo,$pathInfoArr,$connection,false);//为默认模块控制器请求
         }
     }
 
