@@ -212,12 +212,12 @@ class WebServer extends Worker
                 
                 ob_start();
                 
-                if(!empty($tmpArr[1])) {
+                if(!empty($tmpArr[count($tmpArr)-1])) {
                     global $globalConfig;
-                    if($tmpArr[1] == $globalConfig['htaccess']) {
+                    if($tmpArr[count($tmpArr)-1] == $globalConfig['htaccess']) {
                         $this -> dealRoute($pathInfo,$pathInfoArr,$connection,false);
                     }else {
-                        if(in_array($tmpArr[1],$resourceArr)) {
+                        if(in_array($tmpArr[count($tmpArr)-1],$resourceArr)) {
                             include APIROOT."/".substr($workerman_url_info['path'],strpos($workerman_url_info['path'],"public"),strlen($workerman_url_info['path']));
                         }
                     }
