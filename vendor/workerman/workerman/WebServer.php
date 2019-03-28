@@ -273,7 +273,7 @@ class WebServer extends Worker
                 $_SERVER['c'] = $controller;
                 $this -> isController($moudle,$controller);
                 if($this -> is_controller){//若存在控制器则实例化该控制器类
-                    $ControllerObjStr = '\application\controller\\'.$controller;
+                    $ControllerObjStr = '\application\\'.$moudle.'\controller\\'.$controller;
                     $Controller = "";
                     if(!in_array($ControllerObjStr,$this -> controllerObjs)){
                         $Controller = new $ControllerObjStr();
